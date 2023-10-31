@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Merriweather&family=Merriweather+Sans:wght@400;700&display=swap');
 
   :root {
     --background: rgba(140,14,3);
@@ -75,6 +76,8 @@
   
   nav a {
     color: white;
+    font-family: 'Merriweather Sans', sans-serif;
+    font-weight: bold;
     text-decoration: none;
     font-size: 1rem;
     opacity: 0;
@@ -144,6 +147,9 @@
         border: none;
         background: #F27B35;
         text-transform: uppercase;
+        font-family: 'Lato', sans-serif;
+        font-weight: bold;
+        color: white;
       }
       
       button:hover {
@@ -151,8 +157,67 @@
         color: white;
       }
       
+      .text{
+        align-items: center;
+        justify-content: center;
+      }
+      
       .hero {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        row-gap: 15px;
         height: 90vh;
         background: url("images/hero-image.jpg");
         background-size: cover;
       }
+
+ .hero header {
+  color: white;
+  font-size: 70px;
+  font-family: 'Merriweather', serif;
+ }
+
+ .hero .time-content {
+display: flex;
+column-gap: 30px;
+align-items: center;
+
+ }
+
+.time-content .time{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.time .number{
+  font-size: 50px;
+  font-family: 'Lato', sans-serif;
+font-weight: bold;
+}
+
+.time .text{
+  font-family: 'Merriweather Sans', sans-serif;
+  font-size: 15px;
+  text-transform: capitalize;
+}
+
+.time .number,
+.time .text{
+  color: white;
+}
+
+.hero button{
+  background: rgba(140,14,3);
+  padding: 10px, 10px;
+}
+
+.hero button:hover {
+  background: #403C01;
+  color: white;
+  text-transform: uppercase;
+}
+
+    }
