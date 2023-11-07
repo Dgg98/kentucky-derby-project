@@ -1,5 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Merriweather&family=Merriweather+Sans:wght@400;700&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&family=Merriweather+Sans:wght@300;400;700&family=Merriweather:wght@300;400;700;900&display=swap');
   :root {
     --background: rgba(140,14,3);
   }
@@ -219,5 +218,75 @@ font-weight: bold;
   color: white;
   text-transform: uppercase;
 }
+
+.sign-up{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 50px;
+}
+
+h1{
+  font-size: 45px;
+  color: #8C0E03;
+  font-family: 'Merriweather Sans', sans-serif;
+  font-weight: bold;
+}
+
+h1 span {
+  color: black;
+  font-family: 'Merriweather', serif;
+}
+
+.sign-up button{
+  background: #403C01;
+  padding: 10px 15px;
+}
+
+.sign-up button:hover {
+  background: #8C0E03;
+  color: white;
+  text-transform: uppercase;
+}
+
+
+.card-container {
+  display: flex;
+  justify-content: space-around;
+  gap: 20px;
+  padding-bottom: 80px;
+}
+
+.card {
+  width: 300px;
+  padding: 20px;
+  margin: 50px;
+}
+
+.card img {
+  height: auto;
+  display: block;
+  margin: 50px;
+}
+
+h2{
+  font-family: 'Lato', sans-serif;
+  font-size: 13px;
+}
+
+.card-container header {
+  font-family: 'Merriweather', serif;
+  font-size: 40px;
+  color: #403C01;
+  padding-bottom: 20px;
+
+}
+
+body {
+  font-family: 'Lato', sans-serif;
+  color: black;
+  font-size: 12px;
+}
+
 
     }
