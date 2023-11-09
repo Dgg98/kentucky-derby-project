@@ -18,6 +18,11 @@
     width: 100%;
   }
 
+  p {
+    font-size: 13px;
+    line-height: 1.5;
+  }
+
 
   .navigation {
     padding-top: 1em;
@@ -27,6 +32,10 @@
     position: sticky;
     top: 0;
     z-index: 999;
+  }
+
+  .nav-image {
+    margin-top: 5px;
   }
   
   .nav-toggle {
@@ -172,6 +181,12 @@
         background-size: cover;
       }
 
+.hero-counter {
+  padding: 1em 3.5em;
+  background-color: rgba(140,14,3, .5);
+  border-radius: 5%;
+}
+
  .hero header {
   color: white;
   font-size: 70px;
@@ -182,6 +197,7 @@
 display: flex;
 column-gap: 30px;
 align-items: center;
+justify-content: center;
 
  }
 
@@ -209,12 +225,14 @@ font-weight: bold;
 }
 
 .hero button{
-  background: rgba(140,14,3);
+  background: #403C01;
   padding: 10px, 10px;
+  display: block;
+  margin: 15px auto;
 }
 
 .hero button:hover {
-  background: #403C01;
+  background: rgba(140,14,3);
   color: white;
   text-transform: uppercase;
 }
@@ -223,11 +241,11 @@ font-weight: bold;
   display: flex;
   align-items: center;
   justify-content: center;
-  margin: 50px;
+  margin-top: 40px;
 }
 
 h1{
-  font-size: 45px;
+  font-size: 50px;
   color: #8C0E03;
   font-family: 'Merriweather Sans', sans-serif;
   font-weight: bold;
@@ -240,7 +258,7 @@ h1 span {
 
 .sign-up button{
   background: #403C01;
-  padding: 10px 15px;
+  padding: 9px 15px;
 }
 
 .sign-up button:hover {
@@ -249,24 +267,56 @@ h1 span {
   text-transform: uppercase;
 }
 
+.sign-button {
+display: flex;
+justify-content: center;
+margin-top: 20px;
+margin-bottom: 50px;
+}
+
 
 .card-container {
   display: flex;
-  justify-content: space-around;
-  gap: 20px;
-  padding-bottom: 80px;
+  justify-content: center;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  gap: 50px;
 }
 
 .card {
-  width: 300px;
-  padding: 20px;
-  margin: 50px;
+  width: 40%;
+  padding-left: 70px;
 }
 
 .card img {
-  height: auto;
-  display: block;
-  margin: 50px;
+  width: 100%;
+  height: 90%;
+}
+
+.card-content {
+  margin-left: 2em;
+padding-right: 70px;
+width: 50%;
+text-align: justify;
+}
+
+.card-content header {
+  font-size: 17px;
+}
+
+
+
+.images {
+display: flex;
+
+}
+
+.column-1 {
+  display: flex;
+}
+
+.image {
+  width: 100%;
 }
 
 h2{
@@ -281,6 +331,7 @@ h2{
   padding-bottom: 20px;
 
 }
+
 
 body {
   font-family: 'Lato', sans-serif;
