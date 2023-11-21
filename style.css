@@ -312,6 +312,10 @@ padding-right: 70px;
 width: 50%;
 }
 
+.card-content-h2::before {
+  content: "\2014 \0020";
+  }
+
 
 
 
@@ -331,13 +335,14 @@ padding-bottom: 30px;
 
 .planning-card {
   padding-top: 30px;
+  padding-bottom: 30px;
 }
 
 .planning-card header {
   font-family: 'Merriweather', serif;
   font-size: 40px;
   color: #403C01;
-  padding-bottom: 20px;
+  padding-bottom: 18px;
 }
 
 .headlines {
@@ -345,11 +350,14 @@ padding-bottom: 30px;
   padding-bottom: 10px;
 }
 
+.headlines-h2::before {
+  content: "\2014 \0020";
+  }
+
 .cards {
   display: grid;
   grid-template-columns: repeat(3,1fr);
-  justify-content: center;
-  padding: 0 4em;
+  padding: 0 5em;
   gap: 2em;
 }
 
@@ -359,20 +367,94 @@ padding-bottom: 30px;
 
 .visit-card img {
   width: 100%;
-  height: 600px;
+  height: 500px;
   object-fit: cover;
+}
+
+.visit-card button {
+  background: #8C0E03;
+  margin-top: 10px;
+}
+
+.visit-card  button:hover {
+  background: #403C01
 }
 
 
 
 
 
-h3{
+.sponsor-text {
+  display: flex;
+text-align: center;
+justify-content: center;
+align-items: center;
+}
+
+.sponsors header {
+  font-family: 'Merriweather', serif;
+  font-size: 40px;
+  color: #403C01;
+  padding-bottom: 5px;
+  padding-top: 30px;
+}
+
+.sponsor-images {
+  display: grid;
+  gap: 2em;
+ grid-template-columns: repeat(4, 1fr);
+ align-items: center;
+  padding-bottom: 30px;
+  padding: 1em 10em;
+}
+
+.wager {
+  background-image: url(images/wager-image.jpg) ;
+  background-size: cover;
+  background-position: center;
+  width: 80%;
+  min-height: 554px;
+  margin: 0 auto;
+  position: relative;
+margin-bottom: 30px;
+margin-top: 10px;
+}
+
+.wager-content {
+  position: absolute;
+  bottom: 2em;
+  right: 2em;
+}
+
+.wager-h4::before {
+content: "\2014 \0020";
+}
+
+.wager header {
+  font-family: 'Merriweather', serif;
+  font-size: 40px;
+  color: white;
+  padding-bottom: 10px;
+}
+
+.wager button {
+  background: #8C0E03;
+}
+
+
+
+h4 {
+  font-family: 'Lato', sans-serif;
+  font-size: 13px;
+  color: white;
+}
+
+h3 {
   font-family: 'Merriweather Sans', sans-serif;
   color: #403C01;
   padding-top: 10px;
-  padding-bottom: 10px;
-  font-size: 18px;
+  padding-bottom: 5px;
+  font-size: 20px;
 }
 
 h2{
@@ -386,8 +468,6 @@ h2{
   color: #403C01;
   padding-bottom: 20px;
 }
-
-
 
 
 .card-planning {
