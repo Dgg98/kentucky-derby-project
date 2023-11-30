@@ -3,6 +3,7 @@ const minutes = document.querySelector(".minutes .number");
 const hours = document.querySelector(".hours .number");
 const days = document.querySelector(".days .number");
 
+
 let secValue = 37,
 minValue = 56,
 hourValue = 13,

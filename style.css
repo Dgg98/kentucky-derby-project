@@ -109,6 +109,7 @@
         display: none;
       }
 
+  
 
  
 
@@ -444,8 +445,8 @@ content: "\2014 \0020";
 
 
 .tickets {
-  padding-top: 30px;
-  padding-bottom: 30px;
+  padding-top: 40px;
+  padding-bottom: 90px;
 }
 
 
@@ -508,15 +509,12 @@ content: "\2014 \0020";
     background: #403C01
   }
 
-
-
-.wrapper .carousel {
-  white-space: nowrap;
+.main-carousel {
+  background: black;
+  padding: 1em 1em;
 }
 
-.carousel img {
-  height: 200px;
-}
+
 
 
 
@@ -564,6 +562,11 @@ h2{
 
 
 
+.footer {
+  background: #8C0E03;
+  justify-content: center;
+  align-items: center;
+}
 
 
 body {
