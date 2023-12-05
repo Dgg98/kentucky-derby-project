@@ -11,12 +11,9 @@
   
   
   body {
-    font-family: sans-serif;
-  }
+      font-family: 'Lato', sans-serif;
+    }
 
-  .container {
-    width: 100%;
-  }
 
   p {
     font-size: 13px;
@@ -109,6 +106,39 @@
         display: none;
       }
 
+      footer {
+        background: #8C0E03;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+      }
+
+      .footer img {
+        padding: 3em 0;
+      }
+      
+      .icons {
+        display: flex;
+        align-items: center;
+        margin: 0 2em;
+      gap: 1em;
+      }
+      
+      .footer-nav {
+        list-style: none;
+        display: flex;
+        gap: 2em;
+      }
+      
+      .footer-nav li a {
+        font-family: 'Merriweather Sans', sans-serif;
+          font-weight: bold;
+          text-decoration: none;
+          font-size: 1.3rem;
+      color: white;
+      }
+
   
 
  
@@ -129,7 +159,6 @@
       align-items: center; */
       }
 
-   
 
       
       nav {
@@ -156,12 +185,16 @@
       .nav-btn {
         display: block;
         justify-self: center;
+        background: #F27B35;
+      }
+
+      .nav-btn-a {
+        text-decoration: none;
       }
 
       button {
         padding: 10px 15px;
         border: none;
-        background: #F27B35;
         text-transform: uppercase;
         font-family: 'Lato', sans-serif;
         font-weight: bold;
@@ -364,6 +397,9 @@ padding-bottom: 30px;
 
 .visit-card {
   flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .visit-card img {
@@ -562,18 +598,67 @@ h2{
 
 
 
-.footer {
-  background: #8C0E03;
+.form-content header {
+  color: #EBE7D8;
+  font-size: 3em;
+  font-family: 'Merriweather', serif;
+}
+
+.form-container {
+  /* width: 700px; */
+  display: flex;
   justify-content: center;
-  align-items: center;
+  filter: drop-shadow(5px 5px 0.5rem gray)
 }
 
 
-body {
+.form-content {
+  text-align: center;
+}
+
+form {
+  width: 500px;
+  background: #403C01;
+  padding: 3em;
+}
+
+form div {
+  margin: 15px;
+}
+
+label {
+  font-size.8em;
+}
+
+form input {
+  padding: 5px;
+  width: 100%;
+  border: none;
+  border-bottom: 1px solid #999;
+  background: white;
+}
+
+.agree input {
+  width: auto;
+}
+.agree label {
+  color: white;
+}
+
+button {
+  padding: 10px 15px;
+  border: none;
+  background: #8C0E03;
+  text-transform: uppercase;
   font-family: 'Lato', sans-serif;
-  color: black;
-  font-size: 12px;
+  font-weight: bold;
+  color: white;
 }
+
+button:hover {
+  background: lightblue;
+}
+
 
 
     }
