@@ -9,7 +9,9 @@
     box-sizing: border-box;
   }
   
-  
+  html, body {
+    overflow-x: hidden;
+  }
   body {
       font-family: 'Lato', sans-serif;
     }
@@ -18,6 +20,16 @@
   p {
     font-size: 13px;
     line-height: 1.5;
+  }
+
+  button {
+    padding: 10px 15px;
+    border: none;
+    background: #8C0E03;
+    text-transform: uppercase;
+    font-family: 'Lato', sans-serif;
+    font-weight: bold;
+    color: white;
   }
 
 
@@ -49,8 +61,10 @@
   
   .nav-toggle-label span {
     color: white;
-    font-size: .5em;
+    /* font-size: .5em; */
   }
+
+
 
   nav {
     position: absolute;
@@ -102,6 +116,84 @@
         transition: opacity 250ms ease-in-out 250ms;
       }
 
+      .hero {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        row-gap: 15px;
+        height: 80vh;
+        background: url("images/hero-image.jpg");
+        background-size: cover;
+      }
+
+.hero-counter {
+  padding: 1em 3.5em;
+  background-color: rgba(140,14,3, .5);
+  border-radius: 5%;
+}
+
+ .hero header {
+  text-align: center;
+  color: white;
+  font-size: 50px;
+  font-family: 'Merriweather', serif;
+ }
+
+ .hero .time-content {
+display: flex;
+column-gap: 30px;
+align-items: center;
+justify-content: center;
+
+ }
+
+.time-content .time{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.time .number{
+  font-size: 50px;
+  font-family: 'Lato', sans-serif;
+font-weight: bold;
+}
+
+.time .text{
+  font-family: 'Merriweather Sans', sans-serif;
+  font-size: 15px;
+  text-transform: capitalize;
+}
+
+.time .number,
+.time .text{
+  color: white;
+}
+
+.hero button{
+  background: #403C01;
+  padding: 10px, 10px;
+  display: block;
+  margin: 15px auto;
+}
+
+.hero button:hover {
+  background: rgba(140,14,3);
+  color: white;
+  text-transform: uppercase;
+}
+
+button a {
+  text-decoration: none;
+  color: white;
+}
+
+
+
+
+
+
       .gallery {
         display: none;
       }
@@ -112,6 +204,7 @@
         justify-content: center;
         align-items: center;
         flex-direction: column;
+        padding-bottom: 1em;
       }
 
       .footer img {
@@ -135,13 +228,281 @@
         font-family: 'Merriweather Sans', sans-serif;
           font-weight: bold;
           text-decoration: none;
-          font-size: 1.3rem;
+          font-size: 1rem;
       color: white;
       }
 
+      .main-carousel {
+        background: black;
+        padding: 1em 1em;
+      }
+
+      .sign-up{
+        padding-top: 2em;
+        justify-content: center;
+        text-align: center;
+      }
+
+        h1{
+          font-size: 35px;
+          color: #8C0E03;
+          font-family: 'Merriweather Sans', sans-serif;
+          font-weight: bold;
+        }
+        
+        h1 span {
+          color: black;
+          font-family: 'Merriweather', serif;
+        }
+        
+        .sign-up button{
+          background: #403C01;
+          padding: 9px 15px;
+        }
+        
+        .sign-up button:hover {
+          background: #8C0E03;
+          color: white;
+        }
+        
+        .sign-button {
+        display: flex;
+        justify-content: center;
+        margin-top: 20px;
+        margin-bottom: 50px;
+        }
   
 
+      .card-container {
+        justify-content: center;
+        align-items: center;
+        padding: 0em 2em;
+      }
+      
+      .card {
+        width: 100%;
+      }
+      
+      .card img {
+        width: 100%;
+        object-fit: cover;
+        padding-bottom: .5em;
+      }
+      
+      .card-content {
+        justify-content: center;
+        text-align: justify;
+        
+      }
+
+      .card-content header {
+        font-family: 'Merriweather', serif;
+        font-size: 35px;
+        color: #403C01;
+        padding-bottom: .2em;
+      }
+      
+      .card-content-h2::before {
+        content: "\2014 \0020";
+        }
+
+        h2{
+          font-family: 'Lato', sans-serif;
+          font-size: 13px;
+        }
+
  
+        .planning-card {
+          padding: 3em 2em;
+        }
+        
+        .planning-card header {
+          font-family: 'Merriweather', serif;
+          font-size: 40px;
+          color: #403C01;
+          padding-bottom: 18px;
+        }
+
+        .headlines header{
+          font-family: 'Merriweather', serif;
+          font-size: 35px;
+          color: #403C01;
+          padding-bottom: .5em;
+        }
+        
+        .headlines-h2::before {
+          content: "\2014 \0020";
+          }
+        
+        .cards {
+          display: flex;
+          flex-direction: column;
+          gap: 2em;
+        }
+        
+        .visit-card {
+          flex: 1;
+          display: flex;
+          flex-direction: column;
+          justify-content: space-between;
+        }
+
+
+
+        
+        .visit-card img {
+          width: 100%;
+        }
+        
+        .visit-card button {
+          margin-top: .5em;
+          background: #8C0E03;
+          padding: .5em 1em;
+          text-transform: uppercase;
+        }
+        
+        .visit-card  button:hover {
+          background: #403C01
+        }
+        
+        h3 {
+          padding-top: .6em;
+          font-family: 'Merriweather Sans', sans-serif;
+          color: #403C01;
+          font-size: 18px;
+        }
+
+.sponsors {
+  padding: 2em 0;
+}
+
+        .sponsor-text {
+        display: flex;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        }
+        
+        .sponsors header {
+   display: none;
+        }
+        
+        .sponsor-images {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+         align-items: center;
+         gap: 1em;
+        }
+
+        .wager {
+          background-image: url(images/wager-image.jpg) ;
+          background-size: cover;
+          background-position: center;
+          width: 90%;
+          min-height: 300px;
+          margin: 0 auto;
+          position: relative;
+          margin-bottom: 2em;        }
+        
+        .wager-content {
+          position: absolute;
+          bottom: 1em;
+          right: 2em;
+        }
+        
+        .wager-h4::before {
+        content: "\2014 \0020";
+        }
+        
+        .wager header {
+          font-family: 'Merriweather', serif;
+          font-size: 25px;
+          color: white;
+          padding-bottom: 10px;
+        }
+        
+        .wager button {
+          background: #8C0E03;
+        }
+        
+        .wager  button:hover {
+          background: #403C01
+        }
+
+        h4 {
+          font-family: 'Lato', sans-serif;
+          font-size: 13px;
+          color: white;
+        }
+
+
+        .tickets {
+          padding-top: 40px;
+          padding-bottom: 90px;
+        }
+        
+        
+        .tickets header {
+          font-family: 'Merriweather', serif;
+          font-size: 40px;
+          color: #403C01;
+          padding-bottom: .5em;
+        }
+        
+        .headlines2 {
+          padding-left: 2em;
+        }
+        
+        .headlines2-h2::before {
+          content: "\2014 \0020";
+          }
+        
+          .cards2 {
+            display: flex;
+          flex-direction: column;
+          gap: 2em;
+          }
+        
+          .card-wrap h5{
+        padding: 0 2em;
+        font-size: 1.7em;
+          }
+          
+          .visit-card2 {
+            flex: 1;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            flex-direction: column;
+            padding: .5em 2em;
+          }
+          
+        
+          .visit-card2 img {
+            width: 100%;
+            height: 250px;
+            object-fit: cover;
+            padding-bottom: .5em;
+          }
+          
+          .visit-card2 button {
+            background: #8C0E03;
+            margin-top: 1em;
+          }
+          
+          .visit-card2  button:hover {
+            background: #403C01
+          }
+
+          h5 {
+            font-family: 'Merriweather', serif;
+            color: #403C01;
+            font-size: 20px;
+            text-align: center;
+          }
+
+
 
   @media screen and (min-width: 600px){
 
@@ -201,10 +562,7 @@
         color: white;
       }
 
-      button a {
-        text-decoration: none;
-        color: white;
-      }
+     
       
       button:hover {
         background: #403C01;
@@ -321,13 +679,15 @@ margin-bottom: 50px;
 }
 
 
+
+
 .card-container {
   display: flex;
   justify-content: center;
   padding-top: 20px;
   padding-bottom: 40px;
   gap: 2em;
-  padding: 0 70px;
+  padding: 1.5em 70px;
 }
 
 .card {
@@ -514,7 +874,6 @@ content: "\2014 \0020";
     margin: 0 2em;
     position: relative;
     top: 18px;
-
   }
   
   .visit-card2 {
@@ -545,14 +904,12 @@ content: "\2014 \0020";
     background: #403C01
   }
 
+
+
 .main-carousel {
   background: black;
   padding: 1em 1em;
 }
-
-
-
-
 
 
 
