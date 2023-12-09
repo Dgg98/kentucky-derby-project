@@ -502,6 +502,87 @@ button a {
             text-align: center;
           }
 
+          .form-content header {
+            color: #EBE7D8;
+            font-size: 3em;
+            font-family: 'Merriweather', serif;
+          }
+          
+          .form-container {
+            /* width: 700px; */
+            display: flex;
+            justify-content: center;
+            filter: drop-shadow(5px 5px 0.5rem gray);
+            background: #403C01;
+          }
+          
+          
+          .form-content {
+            text-align: center;
+
+          }
+          
+          form {
+            width: 500px;
+            background: #403C01;
+            padding: 3em;
+          }
+          
+          form div {
+            margin: 15px;
+          }
+          
+          label {
+            font-size: .8em;
+          }
+          
+          form input {
+            padding: 10px;
+            width: 100%;
+            border: none;
+            border-bottom: 1px solid #999;
+            background: white;
+          }
+          
+          select {
+            font-size: .8em;
+            color: gray;
+            width: 100%;
+            padding: 10px 15px;
+            filter: drop-shadow(5px 5px 0.5rem gray)
+            border-bottom: 1px solid #999;
+            background-color: white;
+          }
+          
+          h6{
+            color: white;
+            font-family: 'Merriweather Sans', sans-serif;
+            margin-bottom: .5em;
+          }
+          
+          .agree input {
+            width: auto;
+          }
+          .agree label {
+            color: white;
+          }
+          
+          button {
+            padding: 10px 15px;
+            border: none;
+            background: #8C0E03;
+            text-transform: uppercase;
+            font-family: 'Lato', sans-serif;
+            font-weight: bold;
+            color: white;
+          }
+          
+          button:hover {
+            background: #EBE7D8;
+          }
+
+
+
 
 
   @media screen and (min-width: 600px){
@@ -965,12 +1046,15 @@ h2{
   /* width: 700px; */
   display: flex;
   justify-content: center;
-  filter: drop-shadow(5px 5px 0.5rem gray)
+  filter: drop-shadow(5px 5px 0.5rem gray);
+  background: white;
 }
 
 
 .form-content {
   text-align: center;
+  margin-top: 30px;
+  margin-bottom: 30px;
 }
 
 form {
@@ -984,15 +1068,31 @@ form div {
 }
 
 label {
-  font-size.8em;
+  font-size: .8em;
 }
 
 form input {
-  padding: 5px;
+  padding: 10px;
   width: 100%;
   border: none;
   border-bottom: 1px solid #999;
   background: white;
+}
+
+select {
+  font-size: .8em;
+  color: gray;
+  width: 100%;
+  padding: 10px 15px;
+  filter: drop-shadow(5px 5px 0.5rem gray)
+  border-bottom: 1px solid #999;
+  background-color: white;
+}
+
+h6{
+  color: white;
+  font-family: 'Merriweather Sans', sans-serif;
+  margin-bottom: .5em;
 }
 
 .agree input {
@@ -1013,7 +1113,7 @@ button {
 }
 
 button:hover {
-  background: lightblue;
+  background: #EBE7D8;
 }
 
 
